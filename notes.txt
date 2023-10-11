@@ -1,0 +1,5 @@
+1. image + alt, links, semantic html
+
+2. margins / color
+
+3. nav bar
