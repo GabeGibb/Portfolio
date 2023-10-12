@@ -53,7 +53,7 @@ h1{
 section{
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 40%;
     max-width: 1150px;
 
 }
@@ -66,6 +66,9 @@ section{
     }
     .subSection{
         padding-bottom: 20px;
+    }
+    .aloneImg{
+        max-width: 95%;
     }
   }
 
@@ -86,7 +89,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 2%;
+    margin: 3%;
 }
 
 h2{
@@ -101,7 +104,7 @@ h2{
 }
 
 h3{
-    margin: 5px;
+    margin: 0px;
 }
 
 .date{
@@ -147,17 +150,17 @@ h3{
 }
 .info:hover{
     filter: invert(1);
-    transition: 0.5s;
+
 }
 
 a img{
     width: 80px;
     height: 80px;
-    transition: 0.2s;
 }
 
 .aloneImg{
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 a{
@@ -166,10 +169,14 @@ a{
     text-decoration: underline;
 }
 
-.links{
+/* .links{
  
-}
+} */
 
 .link{
     margin-right: 5px;
+}
+
+summary{
+    font-size: larger;
 }
