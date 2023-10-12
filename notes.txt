@@ -3,3 +3,8 @@
 2. margins / color
 
 3. nav bar
+
+
+Make current section highlight at top
+Get stats for valdle
+get messages for rankbot

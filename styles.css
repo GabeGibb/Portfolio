@@ -1,6 +1,6 @@
 html, body{
     margin: 0;
-    height: 3000px;
+    /* height: 100%; */
 }
 
 nav{
@@ -9,7 +9,7 @@ nav{
     justify-content: center;
     position: sticky;
 
-    background-color: #35524A;
+    background-color: #0D1F2D;
     flex-wrap: wrap;
     row-gap: 0px;
     padding: 15px;
@@ -26,19 +26,24 @@ nav{
     text-align: center;
     margin: auto;
     width: fit-content;
+    text-decoration: none;
 }
 
-#about{
-    background-color: #779CAB;
+body{
+    /* background-color: #546A7B; */
+    background-image: linear-gradient(#546A7B, #9EA3B0, #546A7B);
+}
+/* #about{
+    background-color: #546A7B;
 }
 
 #projects{
-    background-color: #627C85;
+    background-color: #546A7B;
 }
 
 #experience{
-    background-color: #A2E8DD;
-}
+    background-color: #546A7B;
+} */
 
 h1{
     margin: auto;
@@ -69,6 +74,13 @@ section{
     }
     .aloneImg{
         max-width: 95%;
+    }
+
+    .navItem{
+        width: 80px;
+    }
+    .navItem a{
+        font-size: large;
     }
   }
 
@@ -161,7 +173,10 @@ a img{
 .aloneImg{
     width: 100%;
     margin: auto;
+    border-radius: 5px;
+    border: 2px solid white;
 }
+
 
 a{
     text-decoration: none;
@@ -169,9 +184,9 @@ a{
     text-decoration: underline;
 }
 
-/* .links{
- 
-} */
+.links{
+    display: flex;
+}
 
 .link{
     margin-right: 5px;
