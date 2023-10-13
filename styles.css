@@ -9,6 +9,7 @@ html, body{
     margin: 0;
     font-family: 'Gabarito', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 nav{
@@ -179,6 +180,7 @@ h2, h2 a{
     margin: auto;
     padding: 5px;
     border-radius: 5px;
+
 }
 
 .info{
@@ -233,6 +235,7 @@ a:hover {
     display: flex;
     font-size: larger;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .link{
@@ -244,8 +247,9 @@ summary{
 }
 
 #pageBottom{
+    margin: auto;
     margin-top: 50px;
-    padding: 100px;
+    padding: 100px 0 100px 0;
     background-color: black;
 }
 
