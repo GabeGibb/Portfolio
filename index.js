@@ -1,7 +1,7 @@
 function scrollToElm(elm){
     let element = document.getElementById(elm);
     let position = element.getBoundingClientRect();
-    window.scrollTo(position.left, position.top + window.scrollY - 100);
+    window.scrollTo(position.left, position.top + window.scrollY - 125);
 }
 
 // let about = document.getElementById('about')
