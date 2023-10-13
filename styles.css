@@ -4,12 +4,8 @@
 
 html, body{
     margin: 0;
-    /* height: 100%; */
-    /* color: white; */
-    /* font-family:monospace; */
     font-family: 'Gabarito', sans-serif;
-
-
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -39,6 +35,9 @@ nav{
     margin: auto;
     width: fit-content;
     text-decoration: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 body{
@@ -73,7 +72,7 @@ body{
 h1{
     margin: auto;
     width: fit-content;
-    font-size: 38px;
+    font-size: 50px;
 }
 
 h1, #underName{
@@ -144,8 +143,12 @@ h3{
     margin: 0px;
 }
 
-.date{
-    color: rgb(100,100,100);
+.date, summary{
+    color: rgb(115,115,115);
+}
+
+h2, h2 a{
+    color: #D00000;
 }
 
 
@@ -172,9 +175,11 @@ h3{
     transform: translateY(-3px);
 }
 
-.textInfoDiv{
+#textInfoDiv{
     margin: auto;
+    margin-top: 20px;
 }
+
 .textInfo{
     color: #E0E1DD;
     text-align: center;
@@ -188,8 +193,9 @@ a img{
 .aloneImg{
     width: 100%;
     margin: auto;
-    border-radius: 5px;
-    border: 2px solid grey;
+    /* border-radius: 5px; */
+    /* border: 2px solid grey; */
+    box-shadow: 10px 10px 2px 1px #5A716A;
 }
 
 
@@ -208,11 +214,12 @@ a:hover {
 .links{
     display: flex;
     font-size: larger;
+    margin-top: 10px;
 }
 
 .link{
-    margin-right: 5px;
-    color:#706993;
+    margin-right: 15px;
+    /* color:#433E0E; */
 }
 
 summary{

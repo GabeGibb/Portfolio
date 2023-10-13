@@ -1,4 +1,5 @@
 function scrollToElm(elm){
     let element = document.getElementById(elm);
-    element.scrollIntoView({ behavior: "smooth"});
+    let position = element.getBoundingClientRect();
+    window.scrollTo(position.left, position.top + window.scrollY - 100);
 }
