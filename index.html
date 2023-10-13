@@ -9,39 +9,30 @@ EMAIL: gabrielgibb1@gmail.com
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Gabriel Gibb">
-  <meta name="description" content="description of your page">
+  <meta name="description" content="A little about me">
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title>Gabriel Gibb</title>
+  <script src="index.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="navItem">
-            <a href="#about">About</a>
+            <div onclick="scrollToElm('about')">About</div>
         </div>
         <div class="navItem">
-            <a href="#projects">Projects</a>
+            <div onclick="scrollToElm('projects')">Projects</div>
         </div>
         <div class="navItem">
-            <a href="#experience">Experience</a>
+            <div onclick="scrollToElm('experience')">Experience</div>
         </div>
     </nav>
 
     <article id="about">
         <h1>Gabriel Gibb</h1>
         <div id="underName">likes to make things<div>
-        <div id="infoBox">
-            <a class="info" target="_blank" href="https://github.com/GabeGibb">
-                <img src="images/githubLogo.png" alt="Github Icon">
-            </a>
-            <a class="info" target="_blank" href="mailto:gabrielgibb1@gmail.com">
-                <img src="images/mailLogo.jpg" alt="Mail Icon">
-            </a>
-            <a class="info" target="_blank" href="https://www.linkedin.com/in/gabriel-j-gibb/">
-                <img src="images/linkedinLogo.svg" alt="Linkedin Icon">
-            </a>
-        </div>
-
+        
         <section>
             <div class="subSection">
                 <h2>About Me</h2>
@@ -67,8 +58,8 @@ EMAIL: gabrielgibb1@gmail.com
                     <div class="technology">Node.js</div>
                     <div class="technology">Flask</div>
                     <div class="technology">jQuery</div>
-                    <div class="technology">React</div>
-                    <div class="technology">Typescript</div>
+                    <!-- <div class="technology">React</div>
+                    <div class="technology">Typescript</div> -->
                 </div>
             </div>
         </section>
@@ -325,5 +316,23 @@ EMAIL: gabrielgibb1@gmail.com
             </div>
         </section>
     </article>
+    <div id="pageBottom">
+        <div id="infoBox">
+            <a class="info" target="_blank" href="https://github.com/GabeGibb">
+                <img src="images/githubLogo.png" alt="Github Icon">
+            </a>
+            <a class="info" target="_blank" href="mailto:gabrielgibb1@gmail.com">
+                <img src="images/mailLogo.jpg" alt="Mail Icon">
+            </a>
+            <a class="info" target="_blank" href="https://www.linkedin.com/in/gabriel-j-gibb/">
+                <img src="images/linkedinLogo.svg" alt="Linkedin Icon">
+            </a>
+        </div>
+
+        <div id="textInfoDiv">
+            <div class="textInfo">gabrielgibb1@gmail.com</div>
+            <div class="textInfo">Gabriel Gibb</div>
+        </div>
+    </div>
 </body>
 </html>

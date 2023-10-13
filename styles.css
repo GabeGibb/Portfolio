@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     /* height: 100%; */
+    /* color: white; */
 }
 
 nav{
@@ -9,9 +10,8 @@ nav{
     justify-content: center;
     position: sticky;
 
-    background-color: #0D1F2D;
+    background-color: #0D1B2A;
     flex-wrap: wrap;
-    row-gap: 0px;
     padding: 15px;
     top:0;
 }
@@ -20,7 +20,10 @@ nav{
     width: 150px;
     display: flex;
 }
-.navItem a{
+.navItem:hover{
+    cursor: pointer;
+}
+.navItem div{
     color: white;
     font-size: xx-large;
     text-align: center;
@@ -30,20 +33,27 @@ nav{
 }
 
 body{
-    /* background-color: #546A7B; */
-    background-image: linear-gradient(#546A7B, #9EA3B0, #546A7B);
-}
-/* #about{
-    background-color: #546A7B;
+    background-color: #415A77;
+    /* background-image: linear-gradient(#2B4570, ); */
 }
 
-#projects{
-    background-color: #546A7B;
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#experience{
-    background-color: #546A7B;
-} */
+.technology{
+    font-size: larger;
+    background-color: #E0E1DD;
+    color: #0D1B2A;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0px;
+    /* transition: 2s; */
+}
+
 
 h1{
     margin: auto;
@@ -73,7 +83,7 @@ section{
         padding-bottom: 20px;
     }
     .aloneImg{
-        max-width: 95%;
+        max-width: 90%;
     }
 
     .navItem{
@@ -93,8 +103,8 @@ summary{
 article{
     width: 100%;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    /* padding-bottom: 50px; */
 }
 
 .subSection{
@@ -123,23 +133,6 @@ h3{
     color: darkgray;
 }
 
-.technologies{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.technology{
-    font-size: larger;
-    background-color: #32DE8A;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    margin-left: 0px;
-    /* transition: 2s; */
-}
-
 /* .technology:hover{
     transform: scale(1.02);
     cursor: default;
@@ -159,10 +152,21 @@ h3{
 .info{
     background-color: white;
     margin: 5px;
+    display: flex;
+    transition: 0.2s;
+    padding-bottom: 3px;
 }
 .info:hover{
     filter: invert(1);
+    transform: translateY(-3px);
+}
 
+.textInfoDiv{
+    margin: auto;
+}
+.textInfo{
+    color: #E0E1DD;
+    text-align: center;
 }
 
 a img{
@@ -181,7 +185,7 @@ a img{
 a{
     text-decoration: none;
     color: black;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .links{
@@ -194,4 +198,24 @@ a{
 
 summary{
     font-size: larger;
+}
+
+#pageBottom{
+    margin-top: 50px;
+    padding: 100px;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 20, 20);
+    /* border: 3px solid #778DA9; */
+}
+
+::-webkit-scrollbar-track {
+    background: #E0E1DD;
 }
