@@ -1,3 +1,2 @@
-highlight nav bar
+deal with weird hover stuff mobile
 
-add fallbacks for video
