@@ -32,10 +32,9 @@ nav{
     flex: 1;
     padding: 10px;
     border: 1px solid transparent;
-    transition: 0.2s;
 }
 
-.navItem:hover{
+.navItem div:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -54,6 +53,7 @@ nav{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    transition: 0.2s;
 }
 
 body{
