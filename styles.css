@@ -149,8 +149,8 @@ article{
     }
   }
 
-summary{
-    font-size: x-large;
+.summary{
+    font-size: large;
     text-align:left;
     flex-direction: column;
 }
@@ -177,7 +177,7 @@ h3{
     margin: 0px;
 }
 
-.date, summary{
+.date, .summary{
     color: rgb(115,115,115);
 }
 
@@ -255,10 +255,6 @@ a:hover {
 
 .link{
     margin-right: 10px;
-}
-
-summary{
-    font-size: large;
 }
 
 #pageBottom{
